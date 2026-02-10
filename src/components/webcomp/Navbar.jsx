@@ -71,7 +71,7 @@ export function Navbar() {
             </Link>
 
             {/* Search Bar */}
-            <div className="flex flex-row items-center gap-4">
+            <div className="flex flex-row items-center gap-10">
                {/* <div className="relative">
                   <input
                      type="text"
