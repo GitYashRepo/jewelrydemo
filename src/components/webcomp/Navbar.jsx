@@ -67,7 +67,7 @@ export function Navbar() {
          <div className="px-6 py-4 flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="text-2xl font-serif text-maroon font-bold">
-               JEWELS
+               Zewar Mahal
             </Link>
 
             {/* Search Bar */}

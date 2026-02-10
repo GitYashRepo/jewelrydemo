@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
-const GOLD_API = "https://api.gold-api.com/price/XAU"; // Gold spot (USD/oz)
-const FX_API = "https://api.exchangerate-api.com/v4/latest/USD"; // USD → INR
+const GOLD_API = "https://api.gold-api.com/price/XAU";
+const FX_API = "https://api.exchangerate-api.com/v4/latest/USD";
 
 export async function GET() {
   try {
@@ -36,7 +36,7 @@ export async function GET() {
     const gold24KPer10Gram = goldInrPerGram * 10;
 
     // Optional: India market premium (GST + import + bullion spread)
-    const INDIA_PREMIUM = 1.08; // ~8%
+    const INDIA_PREMIUM = 1.09; // ~8%
     const gold24KIndiaMarket = gold24KPer10Gram * INDIA_PREMIUM;
 
     return NextResponse.json({
