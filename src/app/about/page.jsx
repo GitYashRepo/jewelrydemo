@@ -1,14 +1,14 @@
-"use client"
+'use client'
 
 import { Navbar } from '@/components/webcomp/Navbar'
-import HomePage from '@/components/webcomp/home/home-page'
+import { AboutPage } from '@/components/webcomp/about/about-page'
 import { Footer } from '@/components/webcomp/Footer'
 
 export default function Page() {
    return (
       <>
          <Navbar />
-         <HomePage />
+         <AboutPage />
          <Footer />
       </>
    )
