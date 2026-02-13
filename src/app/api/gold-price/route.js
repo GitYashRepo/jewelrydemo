@@ -36,7 +36,7 @@ export async function GET() {
     const gold24KPer10Gram = goldInrPerGram * 10;
 
     // Optional: India market premium (GST + import + bullion spread)
-    const INDIA_PREMIUM = 1.0985; // ~8%
+    const INDIA_PREMIUM = 1.099; // ~8%
     const gold24KIndiaMarket = gold24KPer10Gram * INDIA_PREMIUM;
 
     return NextResponse.json({
